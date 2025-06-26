@@ -14,6 +14,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: solid black 1px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__s1 h1 {
@@ -36,6 +40,7 @@ nav {
     width: 100%;
     font-size: 16px;
     border: none;
+    background-color: transparent;
 }
 
 .navbar__s2 input:focus {
@@ -48,6 +53,25 @@ nav {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+/* My learning popup */
+.mylearning{
+    position: relative;
+}
+.mylearning__popup{
+    position: absolute;
+    top: 150%;
+    right: 0;
+    width: 120px;
+    background-color: white;
+    border: solid black 2px;
+    padding: 10%;
+    display: none;
+}
+
+.mylearning:hover .mylearning__popup{
+    display: block;
 }
 
 /* categories */
@@ -72,8 +96,20 @@ nav {
 }
 
 /* Home Image */
+.homeimg{
+    position: relative;
+}
 .homeimg img{
     width: 100%;
+}
+.homeimg__flash{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border: solid black 2px;
+    background-color: white;
+    padding: 2%;
+    width: 40%;
 }
 
 /* Recommended */
